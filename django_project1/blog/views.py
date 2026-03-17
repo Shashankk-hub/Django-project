@@ -18,13 +18,13 @@ def about(request):
 
 # posts = [
 # {
-#    'author': 'Aryan',
+#    'author': 'shashank',
 #    'title': 'Blog Post 1',
 #    'content': 'Blog 1 Content!',
 #    'date_posted': 'January 20, 2026'
 # },
 # {
-#    'author': 'Ramu',
+#    'author': 'aryan',
 #    'title': 'Blog Post 2',
 #    'content': 'Blog 2 Content!',
 #    'date_posted': 'January 23, 2026'
