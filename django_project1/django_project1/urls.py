@@ -19,9 +19,11 @@ from django.urls import path, include
 from users import views as user_view
 from django.contrib.auth import views as auth_views
 from blog import views
-
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
+    
     path("admin/", admin.site.urls),
     path("", views.home, name="blog-home"),
     path("about/", views.about, name="about-page"),

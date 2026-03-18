@@ -1,5 +1,14 @@
 from django.shortcuts import render
 from blog.models import Post
+from django.views.generic import ListView
+
+class PostListView(ListView):
+       model = Post
+       template_name = 'blog/home.html'
+       context_object_name = 'posts'
+       ordering = ['-date_posted']
+       
+       
 
 def home(request):
    context = {
