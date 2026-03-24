@@ -26,6 +26,7 @@ urlpatterns = [
     
     path("admin/", admin.site.urls),
     path("", views.home, name="blog-home"),
+    path("post/<int:pk>/", views.PostDetailView.as_view(), name="post-detail"),
     path("about/", views.about, name="about-page"),
     path("register/", user_view.register, name="register"),
     path("login/", auth_views.LoginView.as_view(template_name="users/login.html"), name="login"),
