@@ -10,6 +10,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html'  # Template for the list
     context_object_name = 'posts'
     ordering = ['-date_posted']       # newest first
+    paginate_by = 5
 
 # Detail view for a single post
 class PostDetailView(DetailView):
